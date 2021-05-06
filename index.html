@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Yolomy</title>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+</head>
+<body>
+<div class="intro-img">
+<!--HEADER-->
+<section class="header">
+
+    <div class="topnav" id="myTopnav">
+    <a href="#home" class="active"><span class="material-icons">
+    shopping_cart
+    </span></a>
+    <a href="#products">Products</a>
+    <a href="#home">Home</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+    </a>
+    <a href="#home" style="float: right;">Yolomy</a>
+    </div>
+
+    <div class="hero-text">
+    <h1 style="font-size:50px">Our Clothing, your Comfort</h1>
+    <p>We Understand that you need to look good and feel great.</p>
+    <p>It all starts with what you are wearing.</p>
+    
+  </div>
+</div>
+
+    <script>
+    function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+    }
+    </script>
+
+</section>
+
+</div>
+<!--INTRO BANNER -->
+<section class="banner-filter">
+
+<div class="w3-bar w3-brown" style="height: 140px; align-content: center;">
+<div  style="margin-top:50px; margin-left:20px;">
+  <button class="w3-bar-item w3-button" onclick="openCity('London')" > <input type="checkbox">&nbsp;&nbsp;MEN</button>
+  <button class="w3-bar-item w3-button" onclick="openCity('Paris')"> <input type="checkbox">&nbsp;&nbsp; WOMEN</button>
+  <button class="w3-bar-item w3-button" onclick="openCity('Tokyo')"> <input type="checkbox">&nbsp;&nbsp;CHILDREN</button>
+  <button class="w3-bar-item w3-button" style="margin-left:800px; background-color:antiquewhite; color: black; ">SEE ALL PRODUCTS</button>
+</div>
+</div>
+<!--
+<div id="London" class="w3-container city">
+  <h2>London</h2>
+  <p>London is the capital city of England.</p>
+</div>
+
+<div id="Paris" class="w3-container city" style="display:none">
+  <h2>Paris</h2>
+  <p>Paris is the capital of France.</p> 
+</div>
+
+<div id="Tokyo" class="w3-container city" style="display:none">
+  <h2>Tokyo</h2>
+  <p>Tokyo is the capital of Japan.</p>
+</div>
+-->
+<script>
+function openCity(cityName) {
+  var i;
+  var x = document.getElementsByClassName("city");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  document.getElementById(cityName).style.display = "block";  
+}
+</script>
+
+</section>
+
+
+<!--SHOP -->
+<section class="shop">
+
+<hr class="solid">
+<h3>MEN</h3>
+   <div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="/assets/products/tshirt.png"style="width:100px; height: 150px;">
+      <p style="text-align: left; color: #9b870c;">T-SHIRT</p>
+      <p style="text-align: right;">5,00 €</p>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="/assets/products/pants.png"style="width:100px; height: 150px;">
+      <p style="text-align: left; color: #9b870c;">PANTS FORCLAZ</p>
+      <p style="text-align: right;">30,00 €</p>
+    </div>
+  </div>
+  
+  
+  <div class="column">
+    <div class="card">
+      <img src="/assets/products/backpack.png"style="width:100px; height: 150px;">
+      <p style="text-align: left; color: #9b870c;">BACKPACK</p>
+      <p style="text-align: right;">60,00 €</p>
+    </div>
+  </div>
+</div>
+
+ <div class="row">
+ <hr class="solid">
+<h3>WOMEN</h3>
+
+  <div class="column">
+    <div class="card">
+      <img src="/assets/products/giacket.png"style="width:100px; height: 150px;">
+      <p style="text-align: left; color: #9b870c;">GIACKET</p>
+      <p style="text-align: right;">60,00 €</p>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="/assets/products/trekkingshoes.png"style="width:130px; height: 150px;">
+      <p style="text-align: left; color: #9b870c;">TREKKING SHOES</p>
+      <p style="text-align: right;">80,00 €</p>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="/assets/products/tshirt_ladies.png"style="width:100px; height: 150px;">
+      <p style="text-align: left; color: #9b870c;">T-SHIRT</p>
+      <p style="text-align: right;">20,00 €</p>
+    </div>
+  </div>
+</div>
+</section>
+
+
+<!--ABOUT US -->
+<section class="about-us">
+<h1 class="fancy">ABOUT US</h1>
+   <img class="responsive" >
+
+
+    <div class="about-text responsive">This is where high fashion clothing is designed and crafted from the heart by 
+    an amazing team of craftsmen and designers who understand what fashion is.
+    </div>
+</section>
+
+<!--PROMO BANNER-->
+<div class="promo">
+  <a href="" style="margin-left:450px;"><img src="/assets/social_icons/twitter_bird.png"></a>
+  <p>"SALE: Buy anything for 45% off. Use the promo CODE YOLOMY45 when you buy items"</p>
+  </a>
+</div>
+
+
+
+<!--FOOTER -->
+<section class="footer">
+   <div class="footer-row">
+  <div class="footer-column" style="background-color:#555; text-align: center;">
+    <h1>YOLOMY</h1>
+    <p>WE ARE YOLOMY - WE UNDERSTAND.</p>
+    <p>FASHION AND STYLE. WE CRAFT OUR</p>
+    <p>PRODUCTS WITH LOVE AND DILIGENCE</p>
+  </div>
+  <div class="footer-column" style="background-color:#555; text-align: center;" >
+    <h2>We are social</h2>
+    <div class="icon-container">  
+      <div><img src="/assets/social_icons/g_plus.png"></div>  
+      <div><img src="/assets/social_icons/facebook.png"></div>  
+      <div><img src="/assets/social_icons/you_tube.png"></div>  
+      <div><img src="/assets/social_icons/stumble_upon.png"></div>  
+      <div><img src="/assets/social_icons/skype.png"></div>  
+      <div><img src="/assets/social_icons/flickr.png"></div>  
+      <div><img src="/assets/social_icons/twitter.png"></div>
+      <div><img src="/assets/social_icons/pinterest.png"></div>
+    </div>
+    <h4  style="margin-top: 50px;" >COPYRIGHT 2015. YOLOMY INC</h4>
+  </div>
+  <div class="footer-column" style="background-color:#555; text-align: center;" >
+    <div class="extra-links">
+    <a><p>CREDITS</p></a>
+    <a><p>PRIVACY</p></a>
+    <a><p>ABOUT</p></a>
+    <a><p>CONTACT</p></a>
+    </div>
+    <h3>Yolomy: We mean fashion</h3>
+    
+  </div>
+</div>
+</section>
+
+</body>
+</html>
